@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   /*  background-image: url('img/marek-piwnicki-XdWNaNuEOj4-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: beige;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+header, form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background: white;
+}
+
+form button{
+    color: #fb8b24;
+    background-color: #ede7e3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    color: #ede7e3;
+    background-color: #fb8b24;
+}
+
+.Todo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Todo_list{
+    min-width: 26%;
+    list-style: none;
+}
+.DIV{
+    position: relative;
+    margin: 0.5rem;
+    background: white;
+    color: rgb(65, 65, 65);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+.DIV li{
+    flex: 1;
+}
+
+.trash_button, .complete_button{
+    background-color: #ede7e3;
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.complete_button{
+    color: #a7c957;
+}
+.trash_button{
+    color: #fe5f55;
+}
+
+.Todo_items{
+    padding: 0rem 1.2rem;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateX(8rem) rotateX(20deg);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+select{
+    color: #fb8b24;
+    width: 10rem;
+    cursor: pointer;
+    padding: 0.8rem;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background-color: #ede7e3;
+    color: #fb8b24;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.7rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after{
+    background-color: #fb8b24;
+    color:#ede7e3 ;
+}

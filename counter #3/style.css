@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    background-color: #edf2f4;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    width: 20%;
+    height: 40%;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    background-color: #edf2f4;
+    box-shadow: -3px -3px 20px rgb(255, 255, 255),
+                 3px 3px 5px gray;
+}
+
+.card h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #5a189a;
+}
+
+.card h1{
+    text-align: center;
+    font-size: 6rem;
+    color: #ff8500;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons button{
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #5a189a;
+    border-radius: 1.2px;
+    border-style: none;
+    background-color: #edf2f4;
+    cursor: pointer;
+    box-shadow: -3px -3px 20px rgb(255, 255, 255),
+                 3px 3px 5px gray;
+}
+
+.buttons button:hover{
+    box-shadow: inset -3px -3px 20px rgb(255, 255, 255),
+                inset 3px 3px 5px gray;
+}

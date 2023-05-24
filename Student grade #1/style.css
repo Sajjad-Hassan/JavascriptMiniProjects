@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.body{
+    height: 100vh;
+    background-color: #119da4;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 15px;
+    background-color: #212529;
+    padding: 2rem;
+    box-shadow:
+         0 17.7px 7.2px -5px rgba(0, 0, 0, 0.079),
+         0 27.2px 11.7px -5px rgba(0, 0, 0, 0.098),
+         0 35.6px 16.7px -5px rgba(0, 0, 0, 0.106),
+         0 47.5px 24.5px -5px rgba(0, 0, 0, 0.116),
+         0 89px 44px -5px rgba(0, 0, 0, 0.15);
+  
+
+}
+
+.lefthead{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    padding: 1rem;
+    margin-left: 2rem;
+    border-left: #119da4 3px solid;
+    height: max-content;
+}
+
+.lefthead a{
+    text-decoration: none;
+    color: #119da4;
+}
+
+.form{
+    height: 90%;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form_item .courseitem{
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: 'Lobster', cursive;
+    padding: 0.4rem;
+    background: none;
+    border-style: none;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+.form .form_item{
+    border-bottom: 1px #3d3b3c  solid;
+
+}
+
+.form_item input::placeholder{
+    color: white;
+  }
+
+.form .form_item:hover{
+    border-bottom: 2px #7f7979 solid;
+}
+
+.form_button{
+    font-family: 'Lobster', cursive;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: #119da4;
+    background: none;
+    cursor: pointer;
+    border-style: none;
+}
+
+.show{
+    position: absolute;
+    width: 90%;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
